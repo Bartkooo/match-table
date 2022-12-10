@@ -4,10 +4,9 @@
 
 <div id="matches">
   <% @matches.each do |match| %>
-    <%= render match %>
-    <p>
-      <%= link_to "Show this match", match %>
-    </p>
+    <%= link_to match do %>
+      <%= render match %>
+    <% end %>
   <% end %>
 </div>
 
