@@ -11,33 +11,22 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :team1, style: "display: block" %>
-    <%= form.text_field :team1 %>
+  <div class="input-group mb-3">
+      <label class="input-group-text">Team 1</label>
+      <%= form.text_field :team1, class:"form-control", required: true %>
+      <span class="input-group-text">score: </span>
+      <%= form.number_field :score1, class:"form-control", required: true %>
+  </div>
+
+  <div class="input-group mb-3">
+      <label class="input-group-text">Team 2</label>
+      <%= form.text_field :team2, class:"form-control", required: true %>
+      <span class="input-group-text">score: </span>
+      <%= form.number_field :score2, class:"form-control", required: true %>
   </div>
 
   <div>
-    <%= form.label :score1, style: "display: block" %>
-    <%= form.number_field :score1 %>
-  </div>
-
-  <div>
-    <%= form.label :team2, style: "display: block" %>
-    <%= form.text_field :team2 %>
-  </div>
-
-  <div>
-    <%= form.label :score2, style: "display: block" %>
-    <%= form.number_field :score2 %>
-  </div>
-
-  <div>
-    <%= form.label :flag1, style: "display: block" %>
     <%= form.text_field :flag1 %>
-  </div>
-
-  <div>
-    <%= form.label :flag2, style: "display: block" %>
     <%= form.text_field :flag2 %>
   </div>
 
