@@ -12,22 +12,17 @@
   <% end %>
 
   <div class="input-group mb-3">
-      <label class="input-group-text">Team 1</label>
+      <label class="input-group-text">Team 1 code:</label>
       <%= form.text_field :team1, class:"form-control", required: true %>
       <span class="input-group-text">score: </span>
       <%= form.number_field :score1, class:"form-control", required: true %>
   </div>
 
   <div class="input-group mb-3">
-      <label class="input-group-text">Team 2</label>
+      <label class="input-group-text">Team 2 code:</label>
       <%= form.text_field :team2, class:"form-control", required: true %>
       <span class="input-group-text">score: </span>
       <%= form.number_field :score2, class:"form-control", required: true %>
-  </div>
-
-  <div>
-    <%= form.text_field :flag1 %>
-    <%= form.text_field :flag2 %>
   </div>
 
   <div>
